@@ -21,7 +21,7 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         port: ${{ secrets.SSH_PORT }}
         script: |
-          cd /var/www/CHIZBU_WEB_DINAMIS
+          cd /var/www/CHIZBU_WEBSITE_DINAMIS
           git pull origin main
           composer install --no-dev
           php artisan migrate --force
